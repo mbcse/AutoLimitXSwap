@@ -1,0 +1,106 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IConnextHandler",
+  "sourceName": "contracts/interfaces/IConnextHandler.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "executor",
+      "outputs": [
+        {
+          "internalType": "contract IExecutor",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "to",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "callData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "originDomain",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "destinationDomain",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recovery",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "callback",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "callbackFee",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "forceSlow",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "receiveLocal",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct CallParams",
+              "name": "params",
+              "type": "tuple"
+            },
+            {
+              "internalType": "address",
+              "name": "transactingAssetId",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "relayerFee",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct XCallArgs",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "name": "xcall",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
