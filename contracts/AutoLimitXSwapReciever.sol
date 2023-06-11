@@ -48,7 +48,7 @@ interface KeeperRegistrarInterface {
 }
 
 
-contract AutoLimitXSwap is IXReceiver, AutomationCompatibleInterface {
+contract AutoLimitXReciever is IXReceiver, AutomationCompatibleInterface {
     using SafeERC20 for IERC20;
 
     receive() external payable {}

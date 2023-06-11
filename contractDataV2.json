@@ -868,6 +868,19 @@
         {
             "inputs": [
                 {
+                    "internalType": "uint96",
+                    "name": "_upkeepFee",
+                    "type": "uint96"
+                }
+            ],
+            "name": "setUpkeepFee",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
                     "internalType": "address",
                     "name": "wethAddress",
                     "type": "address"
@@ -1011,6 +1024,19 @@
             "type": "function"
         },
         {
+            "inputs": [],
+            "name": "upkeepFee",
+            "outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "inputs": [
                 {
                     "internalType": "bytes32",
@@ -1107,7 +1133,7 @@
             "type": "receive"
         }
     ],
-    "AUTOLIMITXSWAP_MUMBAI_ADDRESS": "0x24C2592c928a617Bd6B61D82C4C0D6e2AE75A208",
+    "AUTOLIMITXSWAP_MUMBAI_ADDRESS": "0xefb199412B876909737aD8E17C3ff753E8D88B70",
     "AUTOLIMITXSWAP_GOERLI_ABI": [
         {
             "inputs": [
@@ -1134,6 +1160,11 @@
                 {
                     "internalType": "address",
                     "name": "_wethAddress",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_nativeAddress",
                     "type": "address"
                 }
             ],
@@ -1216,6 +1247,19 @@
                     "internalType": "uint256",
                     "name": "",
                     "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "NATIVE",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
                 }
             ],
             "stateMutability": "view",
@@ -1867,7 +1911,20 @@
         },
         {
             "inputs": [],
-            "name": "poolFee",
+            "name": "poolFee1",
+            "outputs": [
+                {
+                    "internalType": "uint24",
+                    "name": "",
+                    "type": "uint24"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "poolFee2",
             "outputs": [
                 {
                     "internalType": "uint24",
@@ -1900,6 +1957,58 @@
                 }
             ],
             "name": "setHoneySwapRouter2",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "nativeAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "setNativeAddress",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint24",
+                    "name": "_poolFee1",
+                    "type": "uint24"
+                }
+            ],
+            "name": "setPoolFee1",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint24",
+                    "name": "_poolFee2",
+                    "type": "uint24"
+                }
+            ],
+            "name": "setPoolFee2",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "_upkeepFee",
+                    "type": "uint96"
+                }
+            ],
+            "name": "setUpkeepFee",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -2050,6 +2159,19 @@
             "type": "function"
         },
         {
+            "inputs": [],
+            "name": "upkeepFee",
+            "outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "inputs": [
                 {
                     "internalType": "bytes32",
@@ -2146,5 +2268,5 @@
             "type": "receive"
         }
     ],
-    "AUTOLIMITXSWAP_GOERLI_ADDRESS": "0x6b9b216Df1B0cFbcCDB935Ea626eB53717273De7"
+    "AUTOLIMITXSWAP_GOERLI_ADDRESS": "0xE4a1021Ada4f3541bd404308A8e66474321b87eF"
 }

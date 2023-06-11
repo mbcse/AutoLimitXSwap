@@ -65,7 +65,7 @@ contract AutoLimitXSwap is IXReceiver, AutomationCompatibleInterface {
     address public NATIVE ;
 
     AggregatorV3Interface internal priceFeed;
-    IUniswapV2Router02 public honeySwapRouter2 ;
+    IUniswapV2Router02 public verseDexRouter ;
 
     uint96 public upkeepFee = 200000000000000000;
 
@@ -569,8 +569,8 @@ contract AutoLimitXSwap is IXReceiver, AutomationCompatibleInterface {
         return true;
     }
 
-    function setHoneySwapRouter2(address _RouterAddress) public ownerOnly {
-        honeySwapRouter2 = IUniswapV2Router02(_RouterAddress);
+    function setVerseDexRouter(address _RouterAddress) public ownerOnly {
+        verseDexRouter = IUniswapV2Router02(_RouterAddress);
     }
 
      function setWethAddress(address wethAddress) public ownerOnly {
@@ -607,7 +607,7 @@ contract AutoLimitXSwap is IXReceiver, AutomationCompatibleInterface {
 
         // IERC20 token = IERC20(WETH);
         // This contract approves transfer to Connext
-        // token.approve(address(honeySwapRouter2), _amount);
+        // token.approve(address(verseDexRouter), _amount);
         // address[] memory path = new address[](2);
         // path[0] = WETH;
         // path[1] = tokenAd;

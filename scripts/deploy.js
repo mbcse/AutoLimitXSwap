@@ -42,6 +42,7 @@ async function main () {
   await saveToConfig(`AUTOLIMITXSWAP_${CHAIN_NAME}`, 'ADDRESS', autoLimitXSwapDeployer.address)
   console.log('AutoLimitXSwap contract deployed to:', autoLimitXSwapDeployer.address, ` on ${CHAIN_NAME}`)
 
+  await new Promise((resolve) => setTimeout(resolve, 40 * 1000));
   console.log('Verifying Contract...')
 
   try {
